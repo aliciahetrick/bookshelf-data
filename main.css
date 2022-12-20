@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(231, 217, 249);
+}
+
+main {
+  margin-top: 8em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 7em;
+  gap: 1em;
+
+  color: rgb(231, 217, 249);
+  background-color: rgb(100, 118, 239);
+  /* background-color: rgb(252, 76, 140); */
+  /* border-bottom: 1px black solid; */
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.book-image {
+  max-width: 200px;
+}
+
+.book-list {
+  /* border: 5px solid black; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* background-color: yellow; */
+  margin-bottom: 10em;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  background-color: rgb(208, 208, 250);
+  border-radius: 2em;
+}
