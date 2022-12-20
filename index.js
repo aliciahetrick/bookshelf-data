@@ -23,3 +23,16 @@ creates a new instance of bookshelf using books created in createBooks()
 const booksArray = createBooks()
 const bookshelf = new Bookshelf(booksArray)
 console.log(bookshelf)
+
+///////////testing without imported data
+
+let book1 = new Book('author', 'language', 'subject', 'title')
+let book2 = new Book('author', 'language', 'subject', 'title')
+let book3 = new Book('author', 'language', 'subject', 'title')
+
+let bookshelf2 = new Bookshelf([book1, book2])
+console.log(book1)
+console.log(bookshelf2)
+
+console.log(book1.render())
+console.log(bookshelf2.render())
