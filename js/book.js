@@ -6,6 +6,3 @@ class Book {
     this.title = title
   }
 }
-
-const book1 = new Book('author', 'english', 'horror', 'horror book')
-console.log(book1)
