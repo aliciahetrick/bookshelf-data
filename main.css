@@ -12,6 +12,8 @@ body {
 
 main {
   margin-top: 8em;
+  margin-left: 15em;
+  margin-right: 15em;
 }
 
 .navbar {
@@ -46,7 +48,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 5em;
   /* background-color: yellow; */
   margin-bottom: 10em;
 }
@@ -59,4 +61,42 @@ main {
   max-width: 300px;
   background-color: rgb(208, 208, 250);
   border-radius: 2em;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.book-title {
+  color: rgb(100, 118, 239);
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.book-author {
+  color: rgb(100, 118, 239);
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.book-genre {
+  color: rgb(100, 118, 239);
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.book-language {
+  color: rgb(100, 118, 239);
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: rgb(231, 217, 249) 5px solid;
+  border-radius: 50%;
 }

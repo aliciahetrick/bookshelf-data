@@ -14,6 +14,7 @@ class Book {
     //book title
     const title = document.createElement('p')
     title.textContent = this.title
+    title.classList.add('book-title')
 
     //book image
     const image = document.createElement('img')
@@ -23,17 +24,20 @@ class Book {
     //book author
     const author = document.createElement('p')
     author.textContent = this.author
+    author.classList.add('book-author')
 
     //book genre
     const subject = document.createElement('p')
     subject.textContent = `Genre: ${this.subject}`
+    subject.classList.add('book-genre')
 
     //book language
     const language = document.createElement('p')
-    language.textContent = `Language: ${this.language}`
+    language.textContent = this.language
+    language.classList.add('book-language')
 
-    //append book cards to
-    bookCards.append(title, image, author, subject, language)
+    //append book cards to bookCards section
+    bookCards.append(language, title, image, author, subject)
     return bookCards
   }
 }
