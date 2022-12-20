@@ -30,8 +30,6 @@ main {
 
   color: rgb(231, 217, 249);
   background-color: rgb(100, 118, 239);
-  /* background-color: rgb(252, 76, 140); */
-  /* border-bottom: 1px black solid; */
   font-family: Raleway;
   font-weight: 600;
   font-size: 15px;
@@ -43,13 +41,11 @@ main {
 }
 
 .book-list {
-  /* border: 5px solid black; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 5em;
-  /* background-color: yellow; */
   margin-bottom: 10em;
 }
 
@@ -61,7 +57,7 @@ main {
   max-width: 300px;
   background-color: rgb(208, 208, 250);
   border-radius: 2em;
-  padding-top: 2em;
+  /* padding-top: 2em; */
   padding-left: 1em;
   padding-right: 1em;
 }
