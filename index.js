@@ -22,7 +22,6 @@ creates a new instance of bookshelf using books created in createBooks()
 
 const booksArray = createBooks()
 const bookshelf = new Bookshelf(booksArray)
-// console.log(bookshelf)
 
 /**
  * renders bookshelf on the page

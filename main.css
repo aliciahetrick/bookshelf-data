@@ -34,10 +34,8 @@ main {
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
-}
 
-.book-image {
-  max-width: 200px;
+  z-index: 1;
 }
 
 .book-list {
@@ -55,10 +53,11 @@ main {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 300px;
+  width: 300px;
+  height: 462.5;
   background-color: rgb(208, 208, 250);
   border-radius: 2em;
-  /* padding-top: 2em; */
+  padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -70,6 +69,12 @@ main {
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 0px;
+  padding-top: 2em;
+}
+
+.book-image {
+  max-width: 200px;
 }
 
 .book-author {
@@ -78,6 +83,7 @@ main {
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .book-genre {
@@ -90,6 +96,22 @@ main {
 }
 
 .book-language {
+  position: absolute;
+  color: rgb(100, 118, 239);
+  background-color: rgb(231, 217, 249);
+  padding: 5px 7px;
+  border-radius: 8px;
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  max-width: 70px;
+  margin-left: 16em;
+  margin-top: 0em;
+}
+
+/* .book-language {
+  margin-right: 14em;
   color: rgb(100, 118, 239);
   font-family: Raleway;
   font-weight: 600;
@@ -97,4 +119,5 @@ main {
   text-transform: uppercase;
   border: rgb(231, 217, 249) 5px solid;
   border-radius: 50%;
-}
+  margin-top: 0;
+} */
