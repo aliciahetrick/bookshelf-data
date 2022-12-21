@@ -1,11 +1,12 @@
+/**
+ * `Book` represents a book and contains information to describe a book.
+ * @param {string[]} author
+ * @param {string} language
+ * @param {string[]} subject
+ * @param {string} title
+ */
+
 class Book {
-  /**
-   * `Book` represents a book and contains information to describe a book.
-   * @param {array} author
-   * @param {string} language
-   * @param {array} subject
-   * @param {string} title
-   */
   constructor(author, language, subject, title) {
     this.author = author
     this.language = language
