@@ -1,9 +1,13 @@
 class Bookshelf {
+  /**
+   * @param {Book[]} arrOfBooks
+   */
   constructor(arrOfBooks) {
     this.arrOfBooks = arrOfBooks
   }
 
   /**
+   * @param {object} book
    * @returns array with newly added book
    */
   addBook(book) {

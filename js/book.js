@@ -1,4 +1,10 @@
 class Book {
+  /**
+   * @param {array} author
+   * @param {string} language
+   * @param {array} subject
+   * @param {string} title
+   */
   constructor(author, language, subject, title) {
     this.author = author
     this.language = language
