@@ -1,9 +1,8 @@
-/**
- * `Bookshelf` contains an array of `Book`s
- * @param {Book[]} arrOfBooks
- */
-
 class Bookshelf {
+  /**
+   * `Bookshelf` contains an array of `Book`s
+   * @param {Book[]} arrOfBooks
+   */
   constructor(arrOfBooks) {
     this.arrOfBooks = arrOfBooks
   }
