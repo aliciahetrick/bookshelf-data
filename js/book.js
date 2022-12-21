@@ -1,5 +1,6 @@
 class Book {
   /**
+   * `Book` represents a book and contains information to describe a book.
    * @param {array} author
    * @param {string} language
    * @param {array} subject
