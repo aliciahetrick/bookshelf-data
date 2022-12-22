@@ -19,11 +19,24 @@ function createBooks() {
 creates a new instance of bookshelf using books created in createBooks()
  * @returns an array of book objects
  */
-
 const booksArray = createBooks()
 const bookshelf = new Bookshelf(booksArray)
 
-/**
- * renders bookshelf on the page
- */
+//renders bookshelf on the page
 bookshelf.render()
+
+//adds Book to Bookshelf when add-button clicked
+const button = document.querySelector('.add-book-button')
+button.addEventListener('click', function () {
+  let title = document.querySelector('.title')
+  let author = document.querySelector('.author')
+  let language = document.querySelector('.language')
+  let subject = document.querySelector('.subject')
+  let newBook = {
+    title: title.value,
+    author: author.value,
+    language: language.value,
+    subject: subject.value,
+  }
+  console.log(newBook)
+})

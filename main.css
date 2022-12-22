@@ -103,3 +103,8 @@ main {
   margin-left: 16em;
   margin-top: 0em;
 }
+
+.add-book {
+  display: flex;
+  justify-content: center;
+}
