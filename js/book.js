@@ -13,6 +13,10 @@ class Book {
     this.title = title
   }
 
+  /**
+   *
+   * @returns HTML Element
+   */
   render() {
     //create book cards
     const bookCards = document.createElement('section')

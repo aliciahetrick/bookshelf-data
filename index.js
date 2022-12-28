@@ -1,24 +1,21 @@
 /**
  * creates instances of every book using book-data.js
- * @returns array of newly creted book instances
+ * @returns array of newly cretaed book instances
  */
 function createBooks() {
   let arrOfBooks = []
   for (let i = 0; i < bookData.length; i++) {
-    let author = Object.values(bookData[i])[0]
-    let language = Object.values(bookData[i])[1]
-    let subject = Object.values(bookData[i])[2]
-    let title = Object.values(bookData[i])[3]
+    let author = bookData[i].author
+    let language = bookData[i].language
+    let subject = bookData[i].subject
+    let title = bookData[i].title
     let book = new Book(author, language, subject, title)
     arrOfBooks.push(book)
   }
   return arrOfBooks
 }
 
-/**
-creates a new instance of bookshelf using books created in createBooks()
- * @returns an array of book objects
- */
+// creates a new instance of bookshelf using books created in createBooks()
 const booksArray = createBooks()
 const bookshelf = new Bookshelf(booksArray)
 
