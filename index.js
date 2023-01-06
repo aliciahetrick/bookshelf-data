@@ -1,6 +1,6 @@
 /**
  * creates instances of every book using book-data.js
- * @returns array of newly cretaed book instances
+ * @returns array of newly created book instances
  */
 function createBooks() {
   let arrOfBooks = []
@@ -19,10 +19,10 @@ function createBooks() {
 const booksArray = createBooks()
 const bookshelf = new Bookshelf(booksArray)
 
-//renders bookshelf on the page
+// renders bookshelf on the page
 bookshelf.render()
 
-//adds Book to Bookshelf when add-button clicked
+// adds Book to Bookshelf when add-button clicked
 const button = document.querySelector('.add-book-button')
 button.addEventListener('click', function () {
   let title = document.querySelector('.title')

@@ -20,12 +20,10 @@ class Bookshelf {
     //create booklist section
     const bookList = document.createElement('section')
 
-    //loop through all books passed
-    //render and append every book to the booklist
-    for (let i = 0; i < this.arrOfBooks.length; i++) {
-      const bookCard = this.arrOfBooks[i].render()
-      bookList.append(bookCard)
-    }
+    //for every book, render and append to bookList
+    const renderedBookshelf = this.arrOfBooks.map((book) => {
+      bookList.append(book.render())
+    })
 
     //select and append bookList to main element
     const main = document.querySelector('main')
